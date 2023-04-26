@@ -1,0 +1,6 @@
+
+版本说明：
+
+vue-cli版本： 4.x
+项目版本：vue 2.0 + vue-router@3.0
+创建方式：vue create project
