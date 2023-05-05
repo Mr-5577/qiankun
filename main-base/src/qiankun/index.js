@@ -13,7 +13,7 @@ const apps = [
     name: "sub-vue",
     entry: "http://localhost:8022",
     container: "#subapp-viewport",
-    activeRule: "/sub-vue",
+    activeRule: "/subVueRoute",
     props: {
       // 此处将父应用的 store 传入子应用
       store,

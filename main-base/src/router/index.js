@@ -17,8 +17,8 @@ const routes = [
     component: HelloWorld,
   },
   {
-    path: "/sub-vue/*",
-    meta: { title: "子应用" },
+    path: "/subVueRoute/*",
+    meta: { title: "子应用1" },
     component: () => import("@/views/qiankun/index"),
   },
 ];

@@ -15,7 +15,7 @@ if (window.__POWERED_BY_QIANKUN__) {
 function render(props = {}) {
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? "/sub-vue/" : "/", // 抛出路由加前缀
+    base: window.__POWERED_BY_QIANKUN__ ? "/subVueRoute/" : "/", // 抛出路由加前缀
     mode: "history",
     routes,
   });

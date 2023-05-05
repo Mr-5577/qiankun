@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-link to="/">回到主应用</router-link>
     <button @click="handleToSub">跳转sub-vue子应用</button>
     <router-view></router-view>
   </div>
@@ -11,7 +12,7 @@ export default {
   components: {},
   methods: {
     handleToSub() {
-      this.$router.push("/sub-vue/test");
+      this.$router.push("/subVueRoute/test");
     },
   },
 };
