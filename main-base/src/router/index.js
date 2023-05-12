@@ -21,6 +21,11 @@ const routes = [
     meta: { title: "子应用1" },
     component: () => import("@/views/qiankun/index"),
   },
+  {
+    path: "/subReactRoute/*",
+    meta: { title: "子应用2" },
+    component: () => import("@/views/qiankun/index"),
+  },
 ];
 const router = new VueRouter({
   mode: "history",

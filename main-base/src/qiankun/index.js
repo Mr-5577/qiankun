@@ -19,6 +19,16 @@ const apps = [
       store,
     },
   },
+  {
+    name: "sub-react",
+    entry: "http://localhost:3000",
+    container: "#subapp-viewport",
+    activeRule: "/subReactRoute",
+    props: {
+      // 此处将父应用的 store 传入子应用
+      store,
+    },
+  },
 ];
 
 registerMicroApps(apps);

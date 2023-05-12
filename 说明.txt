@@ -1,6 +1,21 @@
 
-版本说明：
+qiankun官网：https://qiankun.umijs.org/zh/guide
 
-vue-cli版本： 4.5.10
-项目版本：vue 2.0 + vue-router@3.0
-创建方式：vue create 项目名
+
+vue-cli版本： 4.5.19
+主应用main-base和微应用sub-vue项目：vue2.0 + vue-router3.0
+创建项目：vue create xxx
+安装vuex：npm install vuex@3
+安装路由：npm install vue-router@3
+
+
+react子应用创建
+全局安装 create-react-app 脚手架：npm install create-react-app -g
+create-react-app：版本5.0.1
+创建项目：npx create-react-app sub-react
+运行npm run eject 命令，暴露配置文件
+react版本：18.2.0
+
+安装路由：npm install react-router-dom    （react-router-dom 6.0）
+React使用useRoutes配置路由集中管理
+https://juejin.cn/post/7139482310876856351
