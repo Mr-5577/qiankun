@@ -13,10 +13,13 @@ import Router from "./router/index";
 
 let root = null;
 function render(props) {
+  console.log("🚀 ~ React子应用获取数据", props);
   root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(
     <React.StrictMode>
-      <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/subReactRoute' : '/'}>
+      <BrowserRouter
+        basename={window.__POWERED_BY_QIANKUN__ ? "/subReactRoute" : "/"}
+      >
         <Router></Router>
       </BrowserRouter>
     </React.StrictMode>
@@ -43,6 +46,11 @@ export async function bootstrap() {
  */
 export async function mount(props) {
   console.log("[react18] props from main framework", props);
+  props.onGlobalStateChange &&
+    props.onGlobalStateChange((state, prev) => {
+      // state: 变更后的状态; prev 变更前的状态
+      console.log("基座传下来的数据**", state, prev);
+    }, true);
   render(props);
 }
 
